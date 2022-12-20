@@ -48,10 +48,10 @@ class VoiceRecorder:
         audio = pyaudio.PyAudio()
         stream = audio.open(
             format=pyaudio.paInt16,
-            channels=1,
-            rate=44100,
+            channels=1,  # best for speech recognition
+            rate=44100,  # 16000 is ok
             input=True,
-            frames_per_buffer=1024,
+            frames_per_buffer=1024,  # how often we check for new audio
         )
         frames = []
         start_time = time.time()
