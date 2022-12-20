@@ -129,6 +129,7 @@ class VoiceRecorder:
     def play_audio(self):
         """
         Plays the audio.
+        Note: This is not currently used in the final program.
         """
         # Loop until we are done recording
         while self.recording:
