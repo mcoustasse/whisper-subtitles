@@ -1,12 +1,12 @@
 import os  # Used to delete the temporary audio file
 import wave  # Used to save the temporary audio file
 import time  # Used to get the current time
-import threading  # Used to run the recording in a separate thread
-import pyaudio  # Used to record audio
+import threading  # Used to run the recording and speech recognition in parallel threads (so the GUI doesn't freeze)
+import pyaudio  # Used to record audio from the microphone
 import tkinter as tk  # Used to create the GUI
 import whisper  # Used to load the speech recognition model
 from gtts import gTTS  # Used to convert text to speech
-from playsound import playsound  # Used to play audio
+from playsound import playsound  # Used to play audio files
 from queue import Queue  # Used to store recordings
 
 
