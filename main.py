@@ -10,10 +10,10 @@ from playsound import playsound  # Used to play audio
 from queue import Queue  # Used to store recordings
 
 
-class VoiceRecorder:
+class RealTimeSubtitles:
     def __init__(self):
         """
-        Initialize the voice recorder.
+        Initializes the class.
         """
         # Load the speech recognition model
         self.audio_model = whisper.load_model("small")  # "medium" is the default
@@ -147,4 +147,4 @@ class VoiceRecorder:
 
 
 if __name__ == "__main__":
-    VoiceRecorder()  # Start the program
+    RealTimeSubtitles()  # Start the program
